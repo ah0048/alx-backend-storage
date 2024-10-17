@@ -1,3 +1,4 @@
+-- a SQL script that creates a trigger that decreases the quantity of an item after adding a new order.
 DELIMITER //
 CREATE Trigger update_items
 AFTER INSERT ON orders
