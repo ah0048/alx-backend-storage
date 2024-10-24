@@ -9,8 +9,8 @@ class Cache:
     '''Cache class'''
     def __init__(self):
         '''Constructor'''
-        self._redis = redis.Redis()
-        self._redis.flushdb()
+        self.__redis = redis.Redis()
+        self.__redis.flushdb()
 
     def store(self, data: Any) -> str:
         '''Method that takes a data argument and returns a string'''
